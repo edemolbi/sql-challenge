@@ -40,12 +40,3 @@ CREATE TABLE titles(
 	title VARCHAR (30) NOT NULL
 );
 
-SELECT 
- emp_no, first_name, last_name, sex, salary
-  FROM employees
-   JOIN salaries
-	USING (emp_no);
-	
-SELECT first_name, last_name, hire_date 
-FROM employees
-WHERE hire_date LIKE '%86%';
